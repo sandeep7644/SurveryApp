@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.example.surveryapp.persistance.entities.Survey" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cardview_padding"
+        app:cardCornerRadius="@dimen/card_corner_radius">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:textStyle="bold"
+                tools:text="Sandeep dubey"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{item.survey_name}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:textStyle="bold"
+                tools:text="Near Bengali square"
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{item.survey_address}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                tools:layout_editor_absoluteY="36dp" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:textStyle="bold"
+                tools:text="Male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{item.gender}"
+                app:layout_constraintEnd_toStartOf="@+id/age"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:textStyle="bold"
+                tools:text="32 years"
+                android:id="@+id/age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{item.age+` years`}"
+                app:layout_constraintEnd_toStartOf="@+id/last_education"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/gender"
+                app:layout_constraintTop_toTopOf="@+id/gender" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:textStyle="bold"
+                tools:text="BE"
+                android:id="@+id/last_education"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{item.last_education}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/age"
+                app:layout_constraintTop_toTopOf="@+id/age" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

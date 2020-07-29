@@ -1,0 +1,10 @@
+package com.example.surveryapp.utils
+
+import android.app.Activity
+import android.content.SharedPreferences
+import android.widget.Toast
+
+fun Activity.showToast(msg : String){
+    Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
+}
+
