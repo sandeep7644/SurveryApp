@@ -5,10 +5,9 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.surveryapp.features.data.model.UserRepository
+import com.example.surveryapp.data.model.UserRepository
 import com.example.surveryapp.persistance.entities.User
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
 class LoginViewModel @ViewModelInject constructor(
     val userRepository: UserRepository,

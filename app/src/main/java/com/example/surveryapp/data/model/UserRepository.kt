@@ -1,4 +1,4 @@
-package com.example.surveryapp.features.data.model
+package com.example.surveryapp.data.model
 
 import android.content.SharedPreferences
 import com.example.surveryapp.persistance.dao.UserDao

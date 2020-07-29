@@ -1,8 +1,7 @@
-package com.example.surveryapp.features.di
+package com.example.surveryapp.di
 
 import android.content.Context
 import androidx.room.Room
-import androidx.room.RoomDatabase
 import com.example.surveryapp.persistance.SurveyDatabase
 import dagger.Module
 import dagger.Provides

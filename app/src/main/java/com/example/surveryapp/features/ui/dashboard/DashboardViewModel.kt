@@ -5,10 +5,8 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.example.surveryapp.features.data.model.SurveyRepository
+import com.example.surveryapp.data.model.SurveyRepository
 import com.example.surveryapp.persistance.entities.Survey
-import kotlinx.coroutines.launch
 
 class DashboardViewModel @ViewModelInject constructor(val surveyRepository: SurveyRepository,
                                                       val sharedPreferences: SharedPreferences

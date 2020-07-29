@@ -1,4 +1,4 @@
-package com.example.surveryapp.features.data.model
+package com.example.surveryapp.data.model
 
 import com.example.surveryapp.persistance.dao.SurveyDao
 import com.example.surveryapp.persistance.entities.Survey
